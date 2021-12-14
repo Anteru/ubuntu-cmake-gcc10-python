@@ -2,7 +2,7 @@ FROM ubuntu:20.04
 LABEL maintainer="dev@anteru.net"
 ENV DEBIAN_FRONTEND noninteractive
 
-RUN apt-get update -q && apt-get upgrade -qy && apt-get install -qy make g++-10 python3-pip python3-venv
+RUN apt-get update -q && apt-get upgrade -qy && apt-get install -qy make g++-10 python3-pip python3-venv git
 RUN pip3 install --upgrade pip
 RUN apt-get install -qy wget
 RUN wget -q https://github.com/Kitware/CMake/releases/download/v3.22.0/cmake-3.22.0-Linux-x86_64.sh
