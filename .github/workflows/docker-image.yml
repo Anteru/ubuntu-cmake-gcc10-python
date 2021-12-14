@@ -27,7 +27,7 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           push: true
-          tags: anteru/ubuntu-latex-python3:latest
+          tags: anteru/ubuntu-cmake-gcc10-python:latest
       -
         name: Image digest
         run: echo ${{ steps.docker_build.outputs.digest }}
